@@ -8,7 +8,7 @@ resource "azurerm_windows_virtual_machine" "windos2016" {
   admin_password      = "P@$$w0rd1234!"
   availability_set_id = azurerm_availability_set.win-2016.id
   network_interface_ids = [
-    azurerm_network_interface.example.id,
+    azurerm_network_interface.niccardid.id,
   ]
 
   os_disk {
